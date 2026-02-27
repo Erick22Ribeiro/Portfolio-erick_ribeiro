@@ -3,21 +3,23 @@
 =================================================== */
 const SKILLS_DATA = {
     linguagens: [
-        { nome: "Python",      icone: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",     progresso: 85, cor: "#3776AB" },
-        { nome: "Django",      icone: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg",       progresso: 75, cor: "#092E20" },
-        { nome: "JavaScript",  icone: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg", progresso: 65, cor: "#F7DF1E" },
-        { nome: "HTML",        icone: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",      progresso: 80, cor: "#E34F26" },
-        { nome: "CSS",         icone: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",        progresso: 75, cor: "#1572B6" },
+        { nome: "Python",     icone: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",          progresso: 60, cor: "#ffee50" },
+        { nome: "Django",     icone: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg",             progresso: 45, cor: "#4a9757" },
+        { nome: "Pandas",     icone: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg",          progresso: 35, cor: "#001969" },
+        { nome: "Plotly",     icone: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/plotly/plotly-original.svg",          progresso: 35, cor: "#435cab" },
+        { nome: "Java",       icone: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",              progresso: 30, cor: "#FF3C3C" },
+        // { nome: "JavaScript", icone: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg", progresso: 65, cor: "#F7DF1E" },
+        // { nome: "HTML",       icone: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",           progresso: 80, cor: "#E34F26" },
+        // { nome: "CSS",        icone: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",             progresso: 75, cor: "#1572B6" },
     ],
     bancos: [
-        { nome: "MySQL",       icone: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",      progresso: 70, cor: "#4479A1" },
-        { nome: "PostgreSQL",  icone: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg", progresso: 65, cor: "#336791" },
-        { nome: "SQLite",      icone: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg",   progresso: 60, cor: "#003B57" },
+        //{ nome: "MySQL",      icone: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",            progresso: 70, cor: "#4479A1" },
+        //{ nome: "PostgreSQL", icone: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",  progresso: 65, cor: "#336791" },
+        //{ nome: "SQLite",     icone: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg",          progresso: 60, cor: "#003B57" },
     ],
     ferramentas: [
-        { nome: "Git",         icone: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",         progresso: 75, cor: "#F05032" },
-        { nome: "VS Code",     icone: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",   progresso: 90, cor: "#007ACC" },
-        { nome: "Pandas",      icone: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg",   progresso: 70, cor: "#150458" },
+        //{ nome: "Git",        icone: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",                progresso: 75, cor: "#F05032" },
+        //{ nome: "VS Code",    icone: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",          progresso: 90, cor: "#007ACC" },
     ]
 };
 
@@ -239,7 +241,6 @@ form.addEventListener("submit", function (event) {
         btnEnviar.classList.remove("loading");
         enviarText.classList.remove("remover-text");
     }, 1200);
-    
 });
 
 function mostrarOverlay() {
@@ -270,15 +271,15 @@ const translations = {
             },
             hab: { h1Hab: "Minhas Habilidades", titulo1: "Linguagens e frameworks", titulo2: "Bancos de dados", titulo3: "Ferramentas e softwares", criadoCom: "Este portfolio foi criado usando" },
             sobre: {
-                titulo: "Sobre mim.",
+                titulo: "Sobre mim",
                 idiomas: "Idiomas", pt: "Português", in: "Inglês", nativo: "Nativo", pro: "Proficiente",
-                p1: "Meu nome é Erick Ribeiro, tenho 20 anos e sou do Rio de Janeiro. Sou estudante de Sistemas de Informação pelo Unilasalle-RJ e desenvolvedor com foco em backend e análise de dados.",
-                p2: "Ao longo da minha jornada, venho desenvolvendo projetos práticos com foco no aprendizado contínuo, explorando desde aplicações web, análises de dados, automações e também projetos de machine learning.",
+                p1: "Meu nome é Erick Ribeiro, tenho 20 anos e sou do Rio de Janeiro. Sou estudante de <strong>Sistemas de Informação</strong> pelo Unilasalle-RJ e desenvolvedor com foco em <strong>backend e análise de dados</strong>.",
+                p2: "Tenho experiência no desenvolvimento de projetos <strong>web, backend, análise de dados, automação e machine learning</strong>. Atualmente, concentro meus projetos em <strong>backend e análise de dados</strong>, aprofundando meus conhecimentos em <strong>Python</strong> e em bibliotecas como <strong>Django, Pandas e plotly</strong>.",
                 p3: "Atualmente, estou em busca do meu primeiro estágio na área de tecnologia, com o objetivo de aplicar meus conhecimentos e aprender com desafios reais do mercado."
             },
             proj: { titulo: "Meus projetos" },
             cntt: {
-                titulo: "Fale comigo.",
+                titulo: "Fale comigo",
                 h3form: "Formulário de contato.",
                 nome: "Seu nome:", email: "Seu e-mail:", msg: "Sua mensagem:",
                 enviar: "Enviar", mensEnv: "Mensagem enviada!", obg: "Obrigado pelo contato",
@@ -301,10 +302,10 @@ const translations = {
             },
             hab: { h1Hab: "My Skills", titulo1: "Languages & frameworks", titulo2: "Databases", titulo3: "Tools & software", criadoCom: "This portfolio was built using" },
             sobre: {
-                titulo: "About me.",
+                titulo: "About me",
                 idiomas: "Languages", pt: "Portuguese", in: "English", nativo: "Native", pro: "Proficient",
-                p1: "My name is Erick Ribeiro, I'm 20 years old and I'm from Rio de Janeiro. I study Information Systems at Unilasalle-RJ and I'm a developer focused on backend and data analysis.",
-                p2: "Throughout my journey, I've been developing practical projects focused on continuous learning, exploring web applications, data analysis, automation and machine learning projects.",
+                p1: "My name is Erick Ribeiro, I'm 20 years old and I'm from Rio de Janeiro. I study <strong>Information Systems</strong> at Unilasalle-RJ and I'm a developer focused on <strong>backend and data analysis</strong>.",
+                p2: "I have experience in developing <strong>web projects</strong>, including <strong>backend development, data analysis, automation</strong>, and <strong>machine learning</strong>. Currently, I focus my projects on <strong>backend</strong> and <strong>data analysis</strong>, deepening my knowledge of <strong>Python</strong> and libraries such as <strong>Django, Pandas, Plotly, and Scikit-learn<strong>.",
                 p3: "I'm currently looking for my first internship in the tech industry, aiming to apply my knowledge and learn from real-world challenges."
             },
             proj: { titulo: "My projects" },
@@ -330,7 +331,7 @@ function setLanguage(lang) {
         const keys = el.dataset.i18n.split(".");
         let text = data.static;
         keys.forEach(k => { text = text?.[k]; });
-        if (text) el.textContent = text;
+        if (text) el.innerHTML = text;
     });
 
     document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {

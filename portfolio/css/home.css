@@ -564,6 +564,13 @@ section.sobre .flex {
     gap: 60px;
 }
 
+section.sobre strong{
+    background: linear-gradient(90deg, #53e2e2, #319b9b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
 .sobre .txt-sobre p {
     margin: 20px 0;
     font-size: 20px;
@@ -1253,13 +1260,25 @@ footer .line-footer p a{
         width: 350px;
     }
     section.contato .contato-redes {
-        padding: 0 5%;
+        padding: 0 10%;
         text-align: center;
     }
     section.contato .contato-redes .p-1{
         text-align: center;
     }
+
 }
+
+@media screen and (max-width: 1035px) {
+
+    section.contato .contato-redes {
+        padding: 0 5%;
+        text-align: center;
+    }
+
+}
+
+
 
 
 /* ========== GERAL ============ */
