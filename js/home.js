@@ -201,9 +201,9 @@ window.addEventListener("scroll", () => {
     ➜ Crie conta gratuita em https://www.emailjs.com
       e substitua os 3 valores abaixo
 =================================================== */
-// const EMAILJS_SERVICE_ID  = "SEU_SERVICE_ID";
-// const EMAILJS_TEMPLATE_ID = "SEU_TEMPLATE_ID";
-// const EMAILJS_PUBLIC_KEY  = "SUA_PUBLIC_KEY";
+const EMAILJS_SERVICE_ID  = "service_wfwmq6f";
+const EMAILJS_TEMPLATE_ID = "template_w8ndf9c";
+const EMAILJS_PUBLIC_KEY  = "C2mteBxgtG88Exq4E";
 
 const form       = document.querySelector(".form-contato");
 const btnEnviar  = document.querySelector(".btn-enviar");
@@ -216,7 +216,7 @@ form.addEventListener("submit", function (event) {
     btnEnviar.classList.add("loading");
     enviarText.classList.add("remover-text");
 
-    /* --- Com EmailJS (descomente quando configurar) ---
+    /* Com EmailJS (descomente quando configurar)  */
     emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form, EMAILJS_PUBLIC_KEY)
         .then(() => {
             mostrarOverlay();
@@ -231,16 +231,16 @@ form.addEventListener("submit", function (event) {
             btnEnviar.classList.remove("loading");
             enviarText.classList.remove("remover-text");
         });
-    */
+
 
     // Simulação temporária (remova quando configurar o EmailJS)
-    setTimeout(() => {
+    /* setTimeout(() => {
         mostrarOverlay();
         form.reset();
         btnEnviar.disabled = false;
         btnEnviar.classList.remove("loading");
         enviarText.classList.remove("remover-text");
-    }, 1200);
+    }, 1200); */
 });
 
 function mostrarOverlay() {
