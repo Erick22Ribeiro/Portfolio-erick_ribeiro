@@ -205,8 +205,8 @@ const EMAILJS_SERVICE_ID  = "service_wfwmq6f";
 const EMAILJS_TEMPLATE_ID = "template_w8ndf9c";
 const EMAILJS_PUBLIC_KEY  = "C2mteBxgtG88Exq4E";
 
-const form       = document.querySelector(".form-contato");
-const btnEnviar  = document.querySelector(".btn-enviar");
+const form = document.querySelector(".form-contato");
+const btnEnviar = document.querySelector(".btn-enviar");
 const enviarText = document.querySelector(".text-enviar");
 
 form.addEventListener("submit", function (event) {
